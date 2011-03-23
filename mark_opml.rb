@@ -22,7 +22,7 @@ links = ""
 opml = ""
 
 # from http://github.com/jes5199/free_my_livejounal_with_opml/blob/ff0fdc675c469f1886cf59b7b99d2d3fd3cc921f/friends.rb
-xml = Builder::XmlMarkup.new(:target => opml)
+xml = Builder::XmlMarkup.new(:target => opml, :indent => 1)
 xml.instruct!
 xml.opml(:version => "1.0") do
     xml.head do
